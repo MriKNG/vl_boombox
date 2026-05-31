@@ -1,13 +1,28 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Glitch'
-description 'NBRP Boombox For QBCore'
+name 'vl_boombox'
+description 'Useable boombox item, utilizing ox_lib'
+repository 'https://github.com/MriKNG/vl_boombox'
 
+-- Original author 'Glitch'
+author 'KNG'
 version '1.0.0'
 
-shared_script 'config.lua'
+shared_scripts {
+    'shared/*.lua'
+}
 
-server_script 'server/main.lua'
+client_script {
+    'client/*.lua'
+}
 
-client_script 'client/main.lua'
+server_scripts {
+    'servver/*.lua'
+}
+
+dependencies {
+
+}
+
+lua54 'yes'
