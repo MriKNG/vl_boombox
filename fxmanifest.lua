@@ -18,7 +18,7 @@ client_script {
 }
 
 server_scripts {
-    'servver/*.lua'
+    'server/*.lua'
 }
 
 dependencies {
